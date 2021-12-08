@@ -49,10 +49,10 @@ pub struct Node {
     #[structopt(default_value = "2", long = "network")]
     pub network: u16,
     /// Specify the IP address and port for the node server.
-    #[structopt(parse(try_from_str), default_value = "0.0.0.0:4132", long = "node")]
+    #[structopt(parse(try_from_str), default_value = "0.0.0.0:4145", long = "node")]
     pub node: SocketAddr,
     /// Specify the IP address and port for the RPC server.
-    #[structopt(parse(try_from_str), default_value = "0.0.0.0:3032", long = "rpc")]
+    #[structopt(parse(try_from_str), default_value = "0.0.0.0:3035", long = "rpc")]
     pub rpc: SocketAddr,
     /// Specify the username for the RPC server.
     #[structopt(default_value = "root", long = "username")]
