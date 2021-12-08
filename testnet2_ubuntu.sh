@@ -44,5 +44,5 @@ echo "              for 4132 and 3032 on your router."
 echo "=================================================="
 
 # Open ports on system
-ufw allow 4132/tcp
-ufw allow 3032/tcp
+ufw allow 4145/tcp
+ufw allow 3035/tcp
