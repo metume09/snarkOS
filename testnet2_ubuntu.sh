@@ -34,17 +34,3 @@ toolchain=`rustup toolchain list | grep -m 1 nightly`
 # cargo clean
 cargo install --path .
 
-echo "=================================================="
-echo " Attention - Please ensure ports 4132 and 3032"
-echo "             are enabled on your local network."
-echo ""
-echo " Cloud Providers - Enable ports 4132 and 3032"
-echo "                   in your network firewall"
-echo ""
-echo " Home Users - Enable port forwarding or NAT rules"
-echo "              for 4132 and 3032 on your router."
-echo "=================================================="
-
-# Open ports on system
-ufw allow 4143/tcp
-ufw allow 3033/tcp
