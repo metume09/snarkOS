@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 echo "================================================"
 echo " Attention - Building snarkOS from source code."
 echo "================================================"
