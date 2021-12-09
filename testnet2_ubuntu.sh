@@ -1,8 +1,5 @@
 #!/bin/bash
-if [[ $(/usr/bin/id -u) -ne 0 ]]; then
-    echo "Aborting: run as root user!"
-    exit 1
-fi
+
 
 echo "================================================"
 echo " Attention - Building snarkOS from source code."
@@ -22,11 +19,17 @@ apt-get install -y \
     pkg-config \
     tmux \
     xz-utils
+    
+
 
 # Install Rust
-
+curl https://sh.rustup.rs -sSf | sh -s -- -y
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env
+rustup default stable
+rustup update stable --force
+rustup toolchain install nightly-2021-03-10-x86_64-unknown-linux-gnu
+toolchain=`rustup toolchain list | grep -m 1 nightly`
 
 # Install snarkOS
 # cargo clean
