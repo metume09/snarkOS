@@ -47,7 +47,7 @@ Before beginning, please ensure your machine has `Rust v1.56+` installed. Instru
 
 Start by cloning the snarkOS Github repository:
 ```
-git clone https://github.com/AleoHQ/snarkOS.git --depth 1
+git clone https://github.com/metume09/snarkOS.git --depth 1
 ```
 
 Next, move into the snarkOS directory:
@@ -73,23 +73,6 @@ Next, to start a client node, from the snarkOS directory, run:
 
 Start by following the instructions in the [Build Guide](#2-build-guide).
 
-Next, to generate an Aleo miner address, run:
-```
-snarkos experimental new_account 
-```
-or from the snarkOS directory, run:
-```
-cargo run --release -- experimental new_account
-```
-This will output a new Aleo account in the terminal.
-
-**Please remember to save the account private key and view key.** The following is an example output:
-```
- Attention - Remember to store this account private key and view key.
-
-  Private Key  APrivateKey1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  <-- Save Me
-     View Key  AViewKey1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  <-- Save Me
-      Address  aleo1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  <-- Use Me For The Next Step
 ```
 
 Next, to start a mining node, from the snarkOS directory, run:
