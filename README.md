@@ -60,14 +60,6 @@ cd snarkOS
 ./testnet2_ubuntu.sh
 ```
 
-## 3a. Run an Aleo Client Node
-
-Start by following the instructions in the [Build Guide](#2-build-guide).
-
-Next, to start a client node, from the snarkOS directory, run:
-```
-./run-client.sh
-```
 
 ## 3b. Run an Aleo Mining Node
 
