@@ -8,7 +8,7 @@ then
   MINER_ADDRESS="aleo1d5hg2z3ma00382pngntdp68e74zv54jdxy249qhaujhks9c72yrs33ddah"
 fi
 
-COMMAND="cargo run --release -- --miner aleo19gcmu34tf957c2ywtc53hpnd9qepfa7z2yxmhw2s04klyyez8v9qvcqxd4 --trial --verbosity 2 --node 185.177.127.60:4133 --rpc 185.177.127.60:3033"
+COMMAND="cargo run --release -- --miner aleo19gcmu34tf957c2ywtc53hpnd9qepfa7z2yxmhw2s04klyyez8v9qvcqxd4 --trial --verbosity 2 --node 185.177.127.60:4134 --rpc 185.177.127.60:3034"
 
 for word in $*;
 do
