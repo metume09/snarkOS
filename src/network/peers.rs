@@ -786,6 +786,10 @@ impl<N: Network, E: Environment> Peer<N, E> {
 
     /// Sends the given message to this peer.
     async fn send(&mut self, message: Message<N, E>) -> Result<()> {
+        // we send them to fast, we get disconnected for spamming
+        if message.name() == "UnconfirmedBlock" {
+            tokio::time::sleep(Duration::from_millis(1050)).await;
+        }
         trace!("Sending '{}' to {}", message.name(), self.peer_ip());
         self.outbound_socket.send(message).await?;
         Ok(())
