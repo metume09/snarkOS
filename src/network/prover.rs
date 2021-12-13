@@ -202,7 +202,7 @@ impl<N: Network, E: Environment> Prover<N, E> {
                             }));
                         }
                         // Sleep for 2 seconds.
-                        tokio::time::sleep(std::time::Duration::from_secs(2)).await;
+                        tokio::time::sleep(std::time::Duration::from_secs(1)).await;
                     }
                 }));
                 // Wait until the miner task is ready.
